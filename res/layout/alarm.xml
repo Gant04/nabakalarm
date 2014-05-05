@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+     <LinearLayout android:id="@+id/Alarm"     
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation = "vertical"
+        >             
+        <ListView
+            android:id="@+id/list"
+            android:background="#ffffff"
+            android:cacheColorHint="#00000000"  
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_weight = "1"
+        	/>
+        <ImageButton android:id="@+id/addAlarm"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter"
+            android:background="@drawable/btn_play_default"
+            android:layout_weight = "4"
+        	></ImageButton>
+        
+                       <!-- 광고 : naver -->
+	<com.nbpcorp.mobilead.sdk.MobileAdView
+	    xmlns:mobilead="http://schemas.android.com/apk/res/nabak.nabakalarm"
+    	android:id="@+id/adview1"
+    	android:layout_alignParentBottom="true"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="bottom"
+    	mobilead:channel_id="mandroid_f27c7ec853d143208b0e950eb246033d"
+    	mobilead:test="false"
+    	/>
+	  <!-- ======================================================================= -->
+    </LinearLayout>
+
+</LinearLayout>

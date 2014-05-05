@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <ImageView
+        android:id="@+id/frameImage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="140dp"
+        android:src="@drawable/alarmreceive" >
+    </ImageView>
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="80dp"
+        android:paddingTop="100dp"
+        android:text="DigitalClock"
+        android:textColor="#f4A460"
+        android:textSize="30sp" />
+    
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+   	 <TextView
+      	 android:id="@+id/mv_target"
+       	 android:layout_marginTop="200dip"
+       	 android:layout_marginLeft="200dip"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:background="@drawable/target"
+        />
+
+   	 <com.nabak.movingview.MovingView
+   	     android:id="@+id/mv_image"
+   	     android:layout_width="wrap_content"
+   	     android:layout_height="wrap_content"
+   	     android:layout_alignParentBottom="true"
+   	     android:layout_marginBottom="30dip"
+   	     android:scaleType="fitCenter"
+   	     android:src="@drawable/alarm_cancel" />
+   	 
+   	     
+	</RelativeLayout>
+	        
+    <!-- 광고 : naver -->
+	          
+	<com.nbpcorp.mobilead.sdk.MobileAdView
+	    xmlns:mobilead="http://schemas.android.com/apk/res/nabak.nabakalarm"
+    	android:id="@+id/adview1"
+    	android:layout_alignParentBottom="true"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="bottom"
+    	mobilead:channel_id="mandroid_f27c7ec853d143208b0e950eb246033d"
+    	mobilead:test="false"
+    	/>
+	  <!-- ======================================================================= -->
+        
+</FrameLayout>
